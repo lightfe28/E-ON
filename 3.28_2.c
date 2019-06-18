@@ -26,9 +26,17 @@ void main(void)
 	for (int i = 0; i < 4; i++) {
 		test = inRect(&box1[i][0], &box1[i][1], &box2[0][0], &box2[0][1], &box2[1][0], &box2[1][1]);
 		if (test == 1) {
-			break;
+			return test;
 		}
 	}
+	for (int i = 0; i < 4; i++) {
+		test = inRect(&box2[i][0], &box2[i][1], &box1[0][0], &box1[0][1], &box1[1][0], &box1[1][1]);
+		if (test == 1) {
+			return test;
+		}
+	}
+	return test;
+	
 
 
 	if (test == 1) 
