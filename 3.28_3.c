@@ -57,7 +57,7 @@ int testOverlap() {
 		}
 	}
 	return test;
-}
+
 
 int inRect(int *x, int *y, int *tx1, int *ty1, int *tx2, int *ty2)
 {
